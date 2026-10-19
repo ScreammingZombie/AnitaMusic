@@ -1,0 +1,45 @@
+ANITA MUSIC LIBRARY - versión 1.0 para Android (by P.V.M.)
+==========================================================
+
+Es una aplicación APARTE de Zombie Music Library: tiene su propio nombre, su propia imagen
+y sus propios datos. Se instala al lado de la otra y NO hace falta desinstalar nada.
+
+CÓMO COMPILARLA (con GitHub, igual que la otra)
+-----------------------------------------------
+Usá un repositorio NUEVO, así no se pisa con el de Zombie Music Library:
+1. En github.com: "+" > New repository. Nombre: anita-music. Elegí "Private". "Create repository".
+2. Tocá "uploading an existing file".
+3. Descomprimí este zip, abrí la carpeta AnitaMusicLibrary, apretá Ctrl+A y arrastrá todo lo que
+   hay ADENTRO hasta GitHub (incluye la carpeta oculta .github y el archivo app/zombie.keystore).
+   Si ".github" no sube, creala a mano: "Add file" > "Create new file" y escribí
+   .github/workflows/build-apk.yml (el contenido está en ese archivo del zip).
+4. "Commit changes". En la pestaña "Actions" arranca sola "Compilar APK" (5 a 10 minutos).
+5. Con el tilde verde: entrá a esa ejecución > "Artifacts" > AnitaMusicLibrary-APK.
+6. Descomprimí el .zip, pasá el .apk al teléfono e instalalo.
+Si falla: copiame el texto del error del paso que tiene la cruz roja.
+
+PRIMER USO
+----------
+1. Al abrir la app pide los permisos (música y notificaciones) y después "sin restricciones
+   de batería". Aceptá los tres.
+2. Tocá "Escanear", elegí la carpeta con la música (incluye las subcarpetas).
+   La biblioteca solo cambia cuando escaneás o tocás "Nueva biblioteca".
+3. Tocá una banda, un año o un disco para abrirlos; tocá un tema para escucharlo.
+
+LA PANTALLA
+-----------
+- Nueva biblioteca / Escanear: vaciar la lista y empezar de cero / agregar una carpeta.
+- Catálogo / Cargar biblioteca: ver un catálogo (por ejemplo el .zml de la PC) / elegir el archivo.
+  Si los temas del catálogo están en el teléfono, también se reproducen.
+  Tocá "Catálogo" otra vez para volver a la biblioteca.
+- Engranaje: permisos, exportar y consejos de batería. Tocalo otra vez para volver.
+- Artista / Año / Disco / Tema: cambia cómo se agrupa la lista (tocar de nuevo invierte el orden).
+- Mantené apretado un tema para ver sus datos y su ubicación.
+
+EL WIDGET
+---------
+Mantené apretado un espacio vacío de la pantalla de inicio > Widgets > Anita Music Library.
+Para agrandarlo, mantenelo apretado y arrastrá los bordes (puede llegar a pantalla completa).
+Muestra la tapa del disco (o la imagen de Anita si el MP3 no tiene), "Banda - año - disco"
+arriba, el tema abajo y los botones. Dos toques seguidos sobre la tapa abren la app en el tema
+que suena. Con nada sonando, el play empieza el último tema que escuchó desde el comienzo.
